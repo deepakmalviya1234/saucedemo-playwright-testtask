@@ -1,0 +1,56 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "playwright"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:playwright/recommended",
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "es2022": true
+  },
+  "settings": {
+    "playwright": {
+      "additionalAssertFunctionNames": [
+        "expectLoaded",
+        "expectCartCount",
+        "expectItemCount",
+        "expectContainsProduct",
+        "expectError",
+        "expectOnOverview",
+        "expectOrderComplete",
+        "expectTotalsAreConsistent"
+      ]
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "playwright/no-wait-for-timeout": "error",
+    "playwright/no-wait-for-selector": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.setup.ts"],
+      "rules": {
+        "playwright/no-standalone-expect": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "playwright-report/",
+    "test-results/",
+    "playwright/.auth/"
+  ]
+}
