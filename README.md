@@ -75,5 +75,5 @@ with no `waitForTimeout` or `waitForSelector`, and this is enforced by ESLint.
 - No visual-regression or accessibility auditing is included.
 - The `checkout-whitespace-zip` test fails on purpose (documents BUG-01); it is
   not a suite regression.
-- Screenshot attachments referenced in `BUGS.md` are placeholders under
-  `docs/attachments/` and should be replaced with real captures before review.
+- Screenshot attachments referenced in `BUGS.md` are stored under
+  `docs/attachments/`.

@@ -29,7 +29,7 @@ Unless noted per-bug, all defects were observed in:
 - **Severity:** Medium — allows an order with no valid delivery information.
 - **Priority:** P2 — realistic data-quality issue on a required field.
 - **Justification:** A required field that accepts semantically empty input defeats the purpose of the validation.
-- **Attachment:** `docs/attachments/bug-01-whitespace-zip.png` _(add screenshot before submission)_
+- **Attachment:** `docs/attachments/bug-01-whitespace-zip.png`
 
 ---
 
@@ -97,4 +97,3 @@ Unless noted per-bug, all defects were observed in:
 
 - BUG-01 is the defect intentionally asserted (as a failing test) in the automation suite — see `tests/checkout-whitespace-zip.spec.ts`.
 - The `*_user` accounts on SauceDemo are seeded to expose specific defects; they are documented here as genuine, reproducible behaviors relevant to a QA review rather than as accidental discoveries.
-- Replace the attachment placeholders in `docs/attachments/` with real screenshots captured during your own session before submitting.
